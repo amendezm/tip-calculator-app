@@ -1,0 +1,116 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--light-grayish-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--white);
+  height: 45vh;
+  min-height: 325px;
+  max-height: 436px;
+  width: 60vw;
+  min-width: 600px;
+  max-width: 825px;
+  border-radius: 25px;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.left,
+.right {
+  flex: 1;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.left {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.field {
+  width: 100%;
+}
+
+.field label {
+  color: var(--dark-grayish-cyan);
+  margin-bottom: 1rem;
+}
+
+.input-with-icon {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.input-with-icon input {
+  width: 100%;
+  background-color: var(--very-light-grayish-cyan);
+  border: none;
+  border-radius: 6px;
+  height: 35px;
+  padding: 0.5rem 2.25rem;
+}
+
+.input-with-icon input:focus-visible {
+  outline: none !important;
+}
+
+.input-with-icon .icon {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tips .field .percents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 40px);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.tips .field .percents .button {
+  border: none;
+  border-radius: 6px;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+.tips .field .percents .custom {
+  border: none;
+  border-radius: 6px;
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--dark-grayish-cyan);
+  font-size: 1.25rem;
+}
+
+.right {
+  background-color: var(--very-dark-cyan);
+}
