@@ -62,6 +62,10 @@ body {
   justify-content: space-between;
 }
 
+.right{
+  padding: 5vh;
+}
+
 .field {
   width: 100%;
 }
@@ -95,9 +99,8 @@ body {
 
 .input-with-icon .icon {
   position: absolute;
-  top: 0;
   left: 15px;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 
@@ -115,6 +118,11 @@ body {
   background-color: var(--very-dark-cyan);
   color: var(--white);
   font-size: 1.25rem;
+}
+
+.tips .field .percents .button.active {
+  background-color: hsl(172, 67%, 45%);
+  color: var(--very-dark-cyan);
 }
 
 .tips .field .percents .button:hover {
@@ -152,18 +160,12 @@ body {
 .tip-amount{
   display: flex;
   justify-content: space-between;
-  padding-top: 1.7rem;
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
   padding-bottom: 1.5rem;
-  
 }
+
 .total{
   display: flex;
   justify-content: space-between;
-
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
 }
 
 .label-precio{
@@ -185,14 +187,14 @@ P{
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  padding-bottom: 5vh;
+  
   
 }
 
 
 .submit-buton{
   height: 40px;
-  width: 265px;
+  width: 100%;
   
    border-radius: 4px;
    background-color: var(--dark-grayish-cyan);
@@ -217,4 +219,6 @@ P{
 :placeholder-shown{
   color: var(--very-dark-cyan);
   font-size: 20px;
+
 }
+
