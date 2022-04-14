@@ -24,13 +24,16 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
+    <div class="splitter">
+      <p>SPLI<br>TTER</p>
+    </div>
     <div class="container">
       <div class="left">
         <div class="bill">
           <div class="field">
             <label for="bill">Bill</label>
             <div class="input-with-icon">
-              <input type="text" name="bill" id="bill" />
+              <input type="text" name="bill" id="bill" placeholder="0" maxlength="11"/>
               <div class="icon">
                 <img src="./images/icon-dollar.svg" alt="" />
               </div>
@@ -54,7 +57,7 @@
           <div class="field">
             <label for="people">People</label>
             <div class="input-with-icon">
-              <input type="text" name="people" id="people" />
+              <input type="text" name="people" id="people" placeholder="0" maxlength="11"/>
               <div class="icon">
                 <img src="./images/icon-person.svg" alt="" />
               </div>
@@ -62,7 +65,29 @@
           </div>
         </div>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <div class="tip-amount">
+          <label class="label-tip-amount" for="">Tip Amount <br>
+            <P class="P">/ person</P>
+          </label>    
+          <label class="label-precio" for="">$0.00</label>
+        </div>
+       
+
+        <div class="total">
+          <label class="label-total" for="">Total <br>
+            <P class="P">/ person</P>
+          </label>
+          
+          <label class="label-precio" for="">$0.00</label>
+        </div>
+        
+        <div class="buton-submit">
+          <button class="submit-buton" type="submit">
+            RESET
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

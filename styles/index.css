@@ -22,14 +22,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.splitter {
+  margin-bottom: 50px;
+}
+
+.splitter p{
+  font-size: 20px;
+  letter-spacing: 5px;
 }
 
 .container {
   background-color: var(--white);
-  height: 45vh;
+  height: 55vh;
   min-height: 325px;
   max-height: 436px;
-  width: 60vw;
+  width: 55vw;
   min-width: 600px;
   max-width: 825px;
   border-radius: 25px;
@@ -73,7 +83,11 @@ body {
   border-radius: 6px;
   height: 35px;
   padding: 0.5rem 2.25rem;
+  text-align: right;
+  font-size: 20px;
+  color: hsl(183, 100%, 15%);
 }
+
 
 .input-with-icon input:focus-visible {
   outline: none !important;
@@ -103,6 +117,13 @@ body {
   font-size: 1.25rem;
 }
 
+.tips .field .percents .button:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+
+}
+
 .tips .field .percents .custom {
   border: none;
   border-radius: 6px;
@@ -113,4 +134,87 @@ body {
 
 .right {
   background-color: var(--very-dark-cyan);
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.label-tip-amount {
+  margin-top: 7px;
+  color: white;
+
+}
+.label-total {
+  margin-top: 7px;
+  color: white;
+}
+
+.tip-amount{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.7rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-bottom: 1.5rem;
+  
+}
+.total{
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+}
+
+.label-precio{
+  color: var(--strong-cyan);
+  font-size: 40px;
+}
+
+P{
+  color: var(--dark-grayish-cyan);
+  font-size: 12px;
+}
+
+
+.buton-submit{
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 5vh;
+  
+}
+
+
+.submit-buton{
+  height: 40px;
+  width: 265px;
+  
+   border-radius: 4px;
+   background-color: var(--dark-grayish-cyan);
+   border: none;
+   color: var(--very-dark-cyan);
+   font-size: 16px;
+}
+
+.submit-buton:hover{
+  cursor: pointer;  
+  background-color: var(--light-grayish-cyan);
+
+}
+
+::placeholder{
+  position: absolute;
+  right: 20px;
+  color: var(--light-grayish-cyan);
+  font-size: 20px;
+  
+}
+:placeholder-shown{
+  color: var(--very-dark-cyan);
+  font-size: 20px;
 }
