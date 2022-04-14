@@ -129,7 +129,6 @@ body {
   cursor: pointer;
   background-color: var(--light-grayish-cyan);
   color: var(--very-dark-cyan);
-
 }
 
 .tips .field .percents .custom {
@@ -182,13 +181,10 @@ P{
 .buton-submit{
   width: 100%;
   height: 100%;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
-  
-  
+  justify-content: end;  
 }
 
 
@@ -214,11 +210,10 @@ P{
   right: 20px;
   color: var(--light-grayish-cyan);
   font-size: 20px;
-  
 }
+
 :placeholder-shown{
   color: var(--very-dark-cyan);
   font-size: 20px;
-
 }
 
