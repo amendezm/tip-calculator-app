@@ -29,7 +29,7 @@ body {
   margin-bottom: 50px;
 }
 
-.splitter p{
+.splitter p {
   font-size: 20px;
   letter-spacing: 5px;
 }
@@ -62,7 +62,7 @@ body {
   justify-content: space-between;
 }
 
-.right{
+.right {
   padding: 5vh;
 }
 
@@ -91,7 +91,6 @@ body {
   font-size: 20px;
   color: hsl(183, 100%, 15%);
 }
-
 
 .input-with-icon input:focus-visible {
   outline: none !important;
@@ -143,77 +142,73 @@ body {
   background-color: var(--very-dark-cyan);
   display: flex;
   flex-direction: column;
- 
 }
 
 .label-tip-amount {
   margin-top: 7px;
   color: white;
-
 }
 .label-total {
   margin-top: 7px;
   color: white;
 }
 
-.tip-amount{
+.tip-amount {
   display: flex;
   justify-content: space-between;
   padding-bottom: 1.5rem;
 }
 
-.total{
+.total {
   display: flex;
   justify-content: space-between;
 }
 
-.label-precio{
+.label-precio {
   color: var(--strong-cyan);
   font-size: 40px;
 }
 
-P{
+P {
   color: var(--dark-grayish-cyan);
   font-size: 12px;
 }
 
-
-.buton-submit{
+.buton-submit {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;  
+  justify-content: end;
 }
 
-
-.submit-buton{
+.submit-buton {
   height: 40px;
   width: 100%;
-  
-   border-radius: 4px;
-   background-color: var(--dark-grayish-cyan);
-   border: none;
-   color: var(--very-dark-cyan);
-   font-size: 16px;
+
+  border-radius: 4px;
+  background-color: var(--dark-grayish-cyan);
+  border: none;
+  color: var(--very-dark-cyan);
+  font-size: 16px;
 }
 
-.submit-buton:hover{
-  cursor: pointer;  
+.submit-buton:hover {
+  cursor: pointer;
   background-color: var(--light-grayish-cyan);
-
 }
 
-::placeholder{
+::placeholder {
   position: absolute;
   right: 20px;
   color: var(--light-grayish-cyan);
   font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-:placeholder-shown{
+:placeholder-shown {
   color: var(--very-dark-cyan);
   font-size: 20px;
 }
-
